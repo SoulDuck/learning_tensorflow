@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 import random
-
+import sys
 
 train_imgs , train_labs , test_imgs , test_labs=preprocessing.get_cifar(type_='image')
 
@@ -13,7 +13,7 @@ height = 32
 width = 32
 color_ch=3
 n_classes = 10
-learning_rate=0.01
+learning_rate=0.001
 max_iter=10000
 check_point=100
 x_ =tf.placeholder(tf.float32, [ None , height , width , color_ch ])
@@ -65,6 +65,10 @@ def next_batch(imgs , labs , batch_size):
 
 
 for step in range(max_iter):
+    msg='\r {}/{}'.format(step , max_iter)
+    sys.stdout.write(msg)
+    sys.stdout.flush()
+
     if step % check_point ==0:
         acc=sess.run([accuracy] , feed_dict={x_: test_imgs[:100] , y_:test_labs[:100]})
         print acc
