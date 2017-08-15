@@ -3,6 +3,44 @@ import random
 import matplotlib.pyplot as plt
 import numpy as np
 import preprocessing
+import pickle
+import os
+def plot_xs_ys(title,xs_title, ys_title , folder_path,xs ,*arg_ys ):
+    plt.xlabel(xs_title)
+    plt.ylabel(ys_title)
+    plt.title(title)
+    for ys in arg_ys:
+        print ys
+        ys=list(ys)
+        plt.plot(xs, ys)
+        #folder_path = './graph/' + file_path.split('/')[-1].split('.')[0]
+    if not os.path.isdir(folder_path):
+        os.mkdir(folder_path)
+    plt.savefig(folder_path +'/'+ys_title)
+    plt.close()
+def draw_graph( log_folder_path ,save_folder , step_list ):
+
+
+    f=open(os.path.join(log_folder_path , 'test_acc'))
+    test_acc=pickle.load(f)
+    f = open(os.path.join(log_folder_path, 'test_cost'))
+    test_cost = pickle.load(f)
+    f = open(os.path.join(log_folder_path, 'train_acc'))
+    train_acc = pickle.load(f)
+    f = open(os.path.join(log_folder_path, 'train_cost'))
+    train_cost = pickle.load(f)
+
+    plot_xs_ys('Normal Vs Abnormal','Step','Train Accuracy',save_folder,step_list , train_acc)
+    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Train Loss', save_folder,step_list, train_cost )
+    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Validation Accuracy', save_folder,step_list, test_acc)
+    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Validation Loss', save_folder,step_list, test_cost)
+    plot_xs_ys('Normal Vs Abnormal','Step','Train_Validation Accuracy ',save_folder,step_list, train_acc, test_acc)
+    plot_xs_ys('Normal Vs Abnormal','Step','Train_Validation Loss ',save_folder,step_list, train_cost, test_cost)
+
+
+
+
+
 def plot_images(imgs , names=None):
     h=math.ceil(math.sqrt(len(imgs)))
     fig=plt.figure(figsize=(20,20))
@@ -47,8 +85,19 @@ def mapping_onehot2str(labels , mapping_info):
 
 
 if __name__ == '__main__':
+    """
     mapping_info = {'airplane': 0, 'automobile': 1, 'bird': 2, 'cat': 3, 'deer': 4, 'dog': 5, \
                     'frog': 6, 'horse': 7, 'ship': 8, 'truck': 9}
     train_imgs, train_labs, test_imgs, test_labs = preprocessing.get_cifar(type_='image')
     mapping_info=key_value_change(mapping_info)
     mapping_str=mapping_onehot2str(train_labs , mapping_info)
+    """
+
+    batch_iteration = 100
+    training_epochs = 2000
+
+    n = training_epochs * batch_iteration
+    xs = range(0, n, batch_iteration)
+    print xs
+    #utils.draw_graph(folder_path='./cost_acc' =, show_graph = True, xs)
+    draw_graph('./cost_acc' , './cost_acc/graph' , step_list=xs )
