@@ -1,6 +1,12 @@
 import preprocessing
 import tensorflow as tf
 import numpy as np
+import matplotlib
+import os
+if "DISPLAY" not in os.environ:
+    # remove Travis CI Error
+    matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
 import random
 import sys
