@@ -4,11 +4,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 import sys
-
+import utils
 train_imgs , train_labs , test_imgs , test_labs=preprocessing.get_cifar(type_='image')
+mapping_info = {'airplane': 0, 'automobile': 1, 'bird': 2, 'cat': 3, 'deer': 4, 'dog': 5, \
+                'frog': 6, 'horse': 7, 'ship': 8, 'truck': 9}
 
+mapping_info=utils.key_value_change(mapping_info)
+mapping_str=utils.mapping_onehot2str(train_labs , mapping_info)
+
+
+utils.plot_images(train_imgs[:100] , mapping_str)
 train_imgs=np.asarray(train_imgs)
 test_imgs=np.asarray(test_imgs)
+train_imgs=train_imgs/255.
+test_imgs=test_imgs/255.
+
 height = 32
 width = 32
 color_ch=3
