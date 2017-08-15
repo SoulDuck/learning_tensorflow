@@ -1,0 +1,108 @@
+import tensorflow as tf
+import PIL
+from PIL import Image
+import numpy as np
+import glob
+import sys,os
+import csv
+
+
+def img2str(img):
+    debug_lv0 = False
+
+    if type(img) == str:
+        img=Image.open(img)
+    if not type(img).__module__ == np.__name__:
+        if __debug__ ==debug_lv0:
+            print 'input image type is not numpy , type was changed to numpy'
+        img=np.asarray(img)
+        str_=img.reshape([-1])
+        if __debug__ ==debug_lv0:
+            print 'image shape:',np.shape(img)
+            print 'str length :',len(str_)
+        return str_
+
+
+
+def mapping(filepath , mapping_info):
+
+    f=open(filepath)
+    lines=f.readlines()
+    values=[]
+    for line in lines[1:]:
+        str_=line.split(',')[1]
+        str_=str_.replace('\n','')
+        value=mapping_info[str_]
+        values.append(value)
+    return values
+
+def cls2onehot(cls, depth):
+    debug_flag=False
+    if not type(cls).__module__ == np.__name__:
+        cls=np.asarray(cls)
+    cls=cls.astype(np.int32)
+    debug_flag = False
+    labels = np.zeros([len(cls), depth] , dtype=np.int32)
+    for i, ind in enumerate(cls):
+        labels[i][ind:ind + 1] = 1
+    if __debug__ == debug_flag:
+        print '#### data.py | cls2onehot() ####'
+        print 'show sample cls and converted labels'
+        print cls[:10]
+        print labels[:10]
+        print cls[-10:]
+        print labels[-10:]
+    return labels
+
+def get_cifar(train_folder='./train' , test_folder='./test' , type_='str'):
+    """
+    airplane :0
+    automobile :1
+    bird :2
+    cat :3
+    deer :4
+    dog :5
+    frog :6
+    horse :7
+    ship :8
+    truck:9
+    """
+    mapping_info = {'airplane': 0, 'automobile': 1, 'bird': 2, 'cat': 3, 'deer': 4, 'dog': 5, \
+                    'frog': 6, 'horse': 7, 'ship': 8, 'truck': 9}
+
+    if type_ == 'str':
+        train_paths=glob.glob(os.path.join(train_folder ,'*.png'))
+        test_paths=glob.glob(os.path.join(test_folder,'*.png'))
+
+        print '# of train data : ', len(train_paths)
+        print '# of test data : ', len(test_paths)
+
+        train_imgs=map(img2str , train_paths)
+        test_imgs = map(img2str, test_paths)
+
+        print 'shape of train data : ', np.shape(train_imgs)
+        print 'shape of test data : ', np.shape(test_imgs)
+
+
+
+    else:
+        print 'not yet'
+    train_cls = mapping('./train/trainLabels.csv', mapping_info)
+    test_cls = mapping('./test/trainLabels.csv', mapping_info)
+    train_labs = cls2onehot(train_cls, depth=10)
+    test_labs = cls2onehot(test_cls, depth=10)
+
+    print 'shape of train data : ', np.shape(train_labs)
+    print 'shape of test data : ', np.shape(test_labs)
+
+    return train_imgs , train_labs , test_imgs, test_labs
+
+
+
+
+
+if __name__ =='__main__':
+    #print mapping('./train/trainLabels.csv' , mapping_info)
+    train_imgs, train_labs, test_imgs, test_labs=get_cifar()
+
+
