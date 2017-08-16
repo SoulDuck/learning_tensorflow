@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cifar-convolution.ipynb" afterPath="$PROJECT_DIR$/cifar-convolution.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cifar-convolution_fix_me.ipynb" afterPath="$PROJECT_DIR$/cifar-convolution_fix_me.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,15 +22,6 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fully_connected_model.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fully_connected_model.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -89,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/cifar-convolution_fix_me.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="17" />
+              <selected id="1" />
             </state>
           </provider>
         </entry>
@@ -767,7 +760,7 @@
     <entry file="file://$PROJECT_DIR$/cifar-convolution_fix_me.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="17" />
+          <selected id="1" />
         </state>
       </provider>
     </entry>
