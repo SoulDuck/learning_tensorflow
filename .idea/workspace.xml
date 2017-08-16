@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cifar-convolution.ipynb" afterPath="$PROJECT_DIR$/cifar-convolution.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cifar-convolution_fix_me.ipynb" afterPath="$PROJECT_DIR$/cifar-convolution_fix_me.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cifar-convolution.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cifar-convolution.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cifar-convolution.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
@@ -85,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cifar-convolution_fix_me.ipynb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cifar-convolution_fix_me.ipynb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cifar-convolution_fix_me.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="6" />
+              <selected id="17" />
             </state>
           </provider>
         </entry>
@@ -121,6 +122,7 @@
         <option value="$PROJECT_DIR$/preprocessing.py" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/cifar-convolution.ipynb" />
+        <option value="$PROJECT_DIR$/cifar-convolution_fix_me.ipynb" />
       </list>
     </option>
   </component>
@@ -704,20 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fully_connected_model.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fully_connected_model(mnist).ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/delete.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
@@ -756,17 +744,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cifar-convolution_fix_me.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cifar-convolution.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="24" />
+          <selected id="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fully_connected_model.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fully_connected_model(mnist).ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cifar-convolution_fix_me.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="17" />
         </state>
       </provider>
     </entry>
