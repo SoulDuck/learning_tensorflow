@@ -10,7 +10,6 @@ def plot_xs_ys(title,xs_title, ys_title , folder_path,xs ,*arg_ys ):
     plt.ylabel(ys_title)
     plt.title(title)
     for ys in arg_ys:
-        print ys
         ys=list(ys)
         plt.plot(xs, ys)
         #folder_path = './graph/' + file_path.split('/')[-1].split('.')[0]
