@@ -155,7 +155,6 @@ def get_cifar(train_folder='./train' , test_folder='./test' , type_='str'):
     train_paths.sort(key=natural_keys)
     test_paths.sort(key=natural_keys)
 
-    print train_paths
     print '# of train data : ', n_train
     print '# of test data : ', n_test
 
@@ -173,9 +172,6 @@ def get_cifar(train_folder='./train' , test_folder='./test' , type_='str'):
     train_labs = cls2onehot(train_cls, depth=10)
     test_labs = cls2onehot(test_cls, depth=10)
 
-
-    plt.imshow(train_imgs[2])
-    plt.show()
     print 'shape of train data : ', np.shape(train_labs)
     print 'shape of test data : ', np.shape(test_labs)
 
