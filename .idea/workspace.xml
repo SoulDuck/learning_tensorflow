@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/convolutionNN.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cifar-convolution.ipynb" afterPath="$PROJECT_DIR$/cifar-convolution.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/cifar-convolution.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="19" />
+              <selected id="6" />
             </state>
           </provider>
         </entry>
@@ -749,7 +746,7 @@
     <entry file="file://$PROJECT_DIR$/cifar-convolution.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="19" />
+          <selected id="6" />
         </state>
       </provider>
     </entry>
