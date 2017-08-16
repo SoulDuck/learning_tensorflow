@@ -20,7 +20,6 @@ def plot_xs_ys(title,xs_title, ys_title , folder_path,xs ,*arg_ys ):
     plt.close()
 def draw_graph( log_folder_path ,save_folder , step_list ):
 
-
     f=open(os.path.join(log_folder_path , 'test_acc'))
     test_acc=pickle.load(f)
     f = open(os.path.join(log_folder_path, 'test_cost'))
