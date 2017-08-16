@@ -15,25 +15,25 @@ def plot_xs_ys(title,xs_title, ys_title , folder_path,xs ,*arg_ys ):
         #folder_path = './graph/' + file_path.split('/')[-1].split('.')[0]
     if not os.path.isdir(folder_path):
         os.mkdir(folder_path)
-    plt.savefig(folder_path +'/'+ys_title)
+    plt.savefig(folder_path +'/'+title)
     plt.close()
-def draw_graph( log_folder_path ,save_folder , step_list ):
+def draw_graph( log_folder_path ,save_folder , step_list, model_name):
 
-    f=open(os.path.join(log_folder_path , 'test_acc'))
+    f=open(log_folder_path + 'test_acc')
     test_acc=pickle.load(f)
-    f = open(os.path.join(log_folder_path, 'test_cost'))
+    f = open(log_folder_path +  'test_cost')
     test_cost = pickle.load(f)
-    f = open(os.path.join(log_folder_path, 'train_acc'))
+    f = open(log_folder_path + 'train_acc')
     train_acc = pickle.load(f)
-    f = open(os.path.join(log_folder_path, 'train_cost'))
+    f = open(log_folder_path + 'train_cost')
     train_cost = pickle.load(f)
 
-    plot_xs_ys('Normal Vs Abnormal','Step','Train Accuracy',save_folder,step_list , train_acc)
-    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Train Loss', save_folder,step_list, train_cost )
-    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Validation Accuracy', save_folder,step_list, test_acc)
-    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Validation Loss', save_folder,step_list, test_cost)
-    plot_xs_ys('Normal Vs Abnormal','Step','Train_Validation Accuracy ',save_folder,step_list, train_acc, test_acc)
-    plot_xs_ys('Normal Vs Abnormal','Step','Train_Validation Loss ',save_folder,step_list, train_cost, test_cost)
+    plot_xs_ys(model_name + ' Train Accuracy','Step','Train Accuracy',save_folder,step_list , train_acc)
+    plot_xs_ys(model_name + ' Train Loss', 'Step', 'Train Loss', save_folder,step_list, train_cost )
+    plot_xs_ys(model_name + ' Validation Accuracy', 'Step', 'Validation Accuracy', save_folder,step_list, test_acc)
+    plot_xs_ys(model_name + ' Validation Loss', 'Step', 'Validation Loss', save_folder,step_list, test_cost)
+    plot_xs_ys(model_name + ' Train_Validation Accuracy','Step','Train_Validation Accuracy ',save_folder,step_list, train_acc, test_acc)
+    plot_xs_ys(model_name + ' Trrain_Validation Loss','Step','Train_Validation Loss ',save_folder,step_list, train_cost, test_cost)
 
 
 
