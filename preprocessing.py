@@ -1,11 +1,26 @@
 import tensorflow as tf
 import PIL
+import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 import glob
 import sys,os
 import csv
 from os import listdir
+import re
+
+
+def atoi(text):
+    return int(text) if text.isdigit() else text
+
+def natural_keys(text):
+    '''
+    alist.sort(key=natural_keys) sorts in human order
+    http://nedbatchelder.com/blog/200712/human_sorting.html
+    (See Toothy's implementation in the comments)
+    '''
+    return [ atoi(c) for c in re.split('(\d+)', text) ]
+
 
 def get_cifar_data() :
     train_files = listdir("train")
@@ -137,6 +152,10 @@ def get_cifar(train_folder='./train' , test_folder='./test' , type_='str'):
     test_paths = glob.glob(os.path.join(test_folder, '*.png'))
     n_train = len(train_paths)
     n_test = len(test_paths)
+    train_paths.sort(key=natural_keys)
+    test_paths.sort(key=natural_keys)
+
+    print train_paths
     print '# of train data : ', n_train
     print '# of test data : ', n_test
 
@@ -144,9 +163,6 @@ def get_cifar(train_folder='./train' , test_folder='./test' , type_='str'):
         train_imgs=map(img2str , train_paths)
         test_imgs = map(img2str, test_paths)
     else:
-        train_imgs=np.zeros([n_train , 32,32,3])
-        test_imgs=np.zeros([n_test , 32,32,3])
-
         train_imgs=map(lambda path : np.asarray(Image.open(path)) , train_paths)
         test_imgs = map(lambda path: np.asarray(Image.open(path)), test_paths)
 
@@ -157,6 +173,9 @@ def get_cifar(train_folder='./train' , test_folder='./test' , type_='str'):
     train_labs = cls2onehot(train_cls, depth=10)
     test_labs = cls2onehot(test_cls, depth=10)
 
+
+    plt.imshow(train_imgs[2])
+    plt.show()
     print 'shape of train data : ', np.shape(train_labs)
     print 'shape of test data : ', np.shape(test_labs)
 
