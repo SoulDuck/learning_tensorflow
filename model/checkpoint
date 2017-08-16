@@ -1,2 +1,2 @@
-model_checkpoint_path: "cifar_deep_convolution.ckpt"
-all_model_checkpoint_paths: "cifar_deep_convolution.ckpt"
+model_checkpoint_path: "cifar_fully_connected.ckpt"
+all_model_checkpoint_paths: "cifar_fully_connected.ckpt"
