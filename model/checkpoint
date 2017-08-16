@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 model_checkpoint_path: "cifar_deep_convolution.ckpt"
 all_model_checkpoint_paths: "cifar_deep_convolution.ckpt"
+=======
+model_checkpoint_path: "cifar_convolution.ckpt"
+all_model_checkpoint_paths: "cifar_convolution.ckpt"
+>>>>>>> 10e804d13fa8396bf7bd39876bb7ae2413c9095b
