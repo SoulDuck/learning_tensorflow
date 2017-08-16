@@ -10,15 +10,16 @@ def plot_xs_ys(title,xs_title, ys_title , folder_path,xs ,*arg_ys ):
     plt.ylabel(ys_title)
     plt.title(title)
     for ys in arg_ys:
-        print ys
         ys=list(ys)
         plt.plot(xs, ys)
         #folder_path = './graph/' + file_path.split('/')[-1].split('.')[0]
     if not os.path.isdir(folder_path):
         os.mkdir(folder_path)
     plt.savefig(folder_path +'/'+ys_title)
+    if show_graph==True:
+        plt.show()
     plt.close()
-def draw_graph( log_folder_path ,save_folder , step_list ):
+def draw_graph( log_folder_path ,save_folder , step_list , show_graph=True ):
 
 
     f=open(os.path.join(log_folder_path , 'test_acc'))
@@ -30,14 +31,15 @@ def draw_graph( log_folder_path ,save_folder , step_list ):
     f = open(os.path.join(log_folder_path, 'train_cost'))
     train_cost = pickle.load(f)
 
-    plot_xs_ys('Normal Vs Abnormal','Step','Train Accuracy',save_folder,step_list , train_acc)
-    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Train Loss', save_folder,step_list, train_cost )
-    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Validation Accuracy', save_folder,step_list, test_acc)
-    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Validation Loss', save_folder,step_list, test_cost)
-    plot_xs_ys('Normal Vs Abnormal','Step','Train_Validation Accuracy ',save_folder,step_list, train_acc, test_acc)
-    plot_xs_ys('Normal Vs Abnormal','Step','Train_Validation Loss ',save_folder,step_list, train_cost, test_cost)
+    plot_xs_ys('Normal Vs Abnormal','Step','Train Accuracy',save_folder,step_list , train_acc , show_graph)
+    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Train Loss', save_folder,step_list, train_cost , show_graph)
+    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Validation Accuracy', save_folder,step_list, test_acc , show_graph)
+    plot_xs_ys('Normal Vs Abnormal', 'Step', 'Validation Loss', save_folder,step_list, test_cost , show_graph)
+    plot_xs_ys('Normal Vs Abnormal','Step','Train_Validation Accuracy ',save_folder,step_list, train_acc, test_acc , show_graph)
+    plot_xs_ys('Normal Vs Abnormal','Step','Train_Validation Loss ',save_folder,step_list, train_cost, test_cost , show_graph)
 
 
+        
 
 
 

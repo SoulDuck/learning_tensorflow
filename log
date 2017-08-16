@@ -1,0 +1,82 @@
+[I 10:00:33.540 NotebookApp] Serving notebooks from local directory: /home/mediwhale/PycharmProjects/learning_tensorflow
+[I 10:00:33.540 NotebookApp] 0 active kernels 
+[I 10:00:33.540 NotebookApp] The Jupyter Notebook is running at: http://0.0.0.0:8888/
+[I 10:00:33.540 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 10:00:38.205 NotebookApp] 404 GET /notebooks/PycharmProjects/learning_tensorflow/cifar-convolution.ipynb (1.210.114.151): No such file or directory: PycharmProjects/learning_tensorflow/cifar-convolution.ipynb
+[W 10:00:38.220 NotebookApp] 404 GET /notebooks/PycharmProjects/learning_tensorflow/cifar-convolution.ipynb (1.210.114.151) 16.08ms referer=None
+[I 10:00:41.072 NotebookApp] 302 GET / (1.210.114.151) 0.70ms
+[W 10:00:43.497 NotebookApp] Notebook cifar-convolution.ipynb is not trusted
+[W 10:00:43.517 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170816100033 (1.210.114.151) 1.20ms referer=http://175.211.95.83:5555/notebooks/cifar-convolution.ipynb
+[I 10:00:44.301 NotebookApp] Kernel started: 7f6a8a35-4b98-48ee-adf1-cf16b009c02c
+[I 10:00:44.683 NotebookApp] Adapting to protocol v5.1 for kernel 7f6a8a35-4b98-48ee-adf1-cf16b009c02c
+[W 10:01:59.895 NotebookApp] No such file or directory: PycharmProjects/learning_tensorflow
+[W 10:01:59.895 NotebookApp] 404 GET /api/contents/PycharmProjects/learning_tensorflow?type=directory&_=1502845080391 (1.210.114.151) 15.24ms referer=http://175.211.95.83:5555/tree/PycharmProjects/learning_tensorflow
+[W 10:02:01.068 NotebookApp] 404 GET /tree/PycharmProjects/learning_tensorflow (1.210.114.151) 2.63ms referer=None
+[W 10:02:02.508 NotebookApp] 404 GET /tree/PycharmProjects/learning_tensorflow (1.210.114.151) 2.41ms referer=None
+[W 10:02:10.437 NotebookApp] Notebook cifar-convolution.ipynb is not trusted
+[W 10:02:10.458 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170816100033 (1.210.114.151) 0.77ms referer=http://175.211.95.83:5555/notebooks/cifar-convolution.ipynb
+[I 10:02:11.315 NotebookApp] Adapting to protocol v5.1 for kernel 7f6a8a35-4b98-48ee-adf1-cf16b009c02c
+[I 10:02:22.585 NotebookApp] Kernel restarted: 7f6a8a35-4b98-48ee-adf1-cf16b009c02c
+[I 10:02:22.984 NotebookApp] Adapting to protocol v5.1 for kernel 7f6a8a35-4b98-48ee-adf1-cf16b009c02c
+2017-08-16 10:02:33.627144: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-16 10:02:33.627161: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-16 10:02:33.627166: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-16 10:02:33.627170: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-16 10:02:33.627173: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-16 10:02:34.262906: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-08-16 10:02:34.263322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:01:00.0
+Total memory: 10.91GiB
+Free memory: 10.75GiB
+2017-08-16 10:02:34.263333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2017-08-16 10:02:34.263338: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2017-08-16 10:02:34.263350: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+2017-08-16 10:03:06.399795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+[I 10:04:11.541 NotebookApp] Saving file at /cifar-convolution.ipynb
+2017-08-16 10:04:26.573674: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+2017-08-16 10:05:54.451975: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+[I 10:06:11.590 NotebookApp] Saving file at /cifar-convolution.ipynb
+2017-08-16 10:07:36.997973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+[I 10:08:11.440 NotebookApp] Saving file at /cifar-convolution.ipynb
+2017-08-16 10:10:11.312231: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+[I 10:10:11.722 NotebookApp] Saving file at /cifar-convolution.ipynb
+2017-08-16 10:12:06.959176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+[I 10:12:11.478 NotebookApp] Saving file at /cifar-convolution.ipynb
+2017-08-16 10:12:29.195619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+[W 10:12:59.836 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170816100033 (1.210.114.151) 0.78ms referer=http://175.211.95.83:5555/notebooks/cifar-convolution.ipynb
+[I 10:13:00.615 NotebookApp] Adapting to protocol v5.1 for kernel 7f6a8a35-4b98-48ee-adf1-cf16b009c02c
+[I 10:13:01.870 NotebookApp] 302 GET /notebooks/ (1.210.114.151) 1.56ms
+[W 10:13:11.198 NotebookApp] 404 GET /favicon.ico (1.210.114.151) 2.60ms referer=http://175.211.95.83:5555/view/cost_acc/Train_Validation%20Accuracy%20.png
+[I 10:14:11.459 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:14:31.028 NotebookApp] 302 GET /notebooks/ (1.210.114.151) 1.67ms
+[I 10:15:03.905 NotebookApp] Saving file at /utils.py
+2017-08-16 10:15:41.077654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0)
+[W 10:16:05.047 NotebookApp] delete /cost_acc/cifar_convolution_test_acc
+[W 10:16:05.051 NotebookApp] delete /cost_acc/test_acc
+[W 10:16:05.054 NotebookApp] delete /cost_acc/cifar_convolution_train_cost
+[W 10:16:05.057 NotebookApp] delete /cost_acc/cifar_convolution_test_cost
+[W 10:16:05.060 NotebookApp] delete /cost_acc/cifar_convolution_train_acc
+[W 10:16:05.063 NotebookApp] delete /cost_acc/Train Accuracy.png
+[W 10:16:05.066 NotebookApp] delete /cost_acc/test_cost
+[W 10:16:05.070 NotebookApp] delete /cost_acc/Train Loss.png
+[W 10:16:05.073 NotebookApp] delete /cost_acc/Train_Validation Accuracy .png
+[W 10:16:05.076 NotebookApp] delete /cost_acc/train_acc
+[W 10:16:05.079 NotebookApp] delete /cost_acc/Validation Loss.png
+[W 10:16:05.081 NotebookApp] delete /cost_acc/Validation Accuracy.png
+[W 10:16:05.083 NotebookApp] delete /cost_acc/Train_Validation Loss .png
+[W 10:16:05.084 NotebookApp] delete /cost_acc/train_cost
+[I 10:16:11.494 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:18:11.469 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:20:11.534 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:20:38.003 NotebookApp] Saving file at /utils.py
+[I 10:20:42.403 NotebookApp] Saving file at /utils.py
+[I 10:22:11.407 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:24:11.404 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:26:11.417 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:28:11.402 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:30:11.406 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:32:11.396 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:34:11.478 NotebookApp] Saving file at /cifar-convolution.ipynb
+[I 10:36:11.401 NotebookApp] Saving file at /cifar-convolution.ipynb
