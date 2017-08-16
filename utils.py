@@ -98,4 +98,4 @@ if __name__ == '__main__':
     xs = range(0, n, batch_iteration)
     print xs
     #utils.draw_graph(folder_path='./cost_acc' =, show_graph = True, xs)
-    draw_graph('./cost_acc' , './cost_acc/graph' , step_list=xs )
+    draw_graph('./cost_acc/3conv' , './cost_acc/3conv/graph' , step_list=xs )
