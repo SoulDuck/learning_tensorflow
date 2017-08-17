@@ -1,2 +1,2 @@
-model_checkpoint_path: "cifar_convolution.ckpt"
-all_model_checkpoint_paths: "cifar_convolution.ckpt"
+model_checkpoint_path: "cifar_deep_convolution-block-overfitting.ckpt"
+all_model_checkpoint_paths: "cifar_deep_convolution-block-overfitting.ckpt"
