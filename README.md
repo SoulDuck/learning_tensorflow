@@ -7,3 +7,15 @@
 - preprocessing.py : cifar data loading and preprocessing
 
 # Mediwhale
+![Alt text](readme_pic/title.png)
+
+![Alt text](readme_pic/index.png)
+
+
+
+![Alt text](readme_pic/ML_DL.png)
+
+![Alt text](readme_pic/dataset.png)
+
+![Alt text](readme_pic/title.png)
+
