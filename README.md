@@ -11,9 +11,10 @@
 
 ![Alt text](readme_pic/index.png)
 
-
+![Alt text](readme_pic/preprocessing.png)
 
 ![Alt text](readme_pic/ML_DL.png)
+
 
 ![Alt text](readme_pic/dataset.png)
 
