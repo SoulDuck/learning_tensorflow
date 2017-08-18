@@ -17,5 +17,7 @@
 
 ![Alt text](readme_pic/dataset.png)
 
-![Alt text](readme_pic/title.png)
+![Alt text](readme_pic/cifar10.png)
+
+![Alt text](readme_pic/batch.png)
 
