@@ -21,3 +21,29 @@
 
 ![Alt text](readme_pic/batch.png)
 
+![Alt_text](readme_pic/relu.png)
+
+![Alt_text](readme_pic/need_aug.png)
+
+![Alt_text](readme_pic/need_dropoug.png)
+
+![Alt_text](readme_pic/intro_tensorflow.png)
+
+![Alt_text](readme_pic/intro_tf1.png)
+
+![Alt_text](readme_pic/intro_tf2.png)
+
+![Alt_text](readme_pic/conv0.png)
+
+![Alt_text](readme_pic/conv1.png)
+
+![Alt_text](readme_pic/conv2.png)
+
+![Alt_text](readme_pic/draw_graph.png)
+
+![Alt_text](readme_pic/connect_layer.png)
+
+![Alt_text](readme_pic/fc.png)
+
+![Alt_text](readme_pic/result_conv.png)
+
