@@ -192,7 +192,7 @@ def lec2_3():
                 tmp_path_=os.path.join(tmp_path , str(oc))
                 os.mkdir(tmp_path_) #/filter_image_0/0/0
                 for ic in range(in_ch):
-                    plt.imsave(tmp_path_+'0_'+str(ic)+'.png' , wfilter_out[f][:,:,ic,oc]) #/filter_image_0/0/1.png
+                    plt.imsave(os.path.join(tmp_path_,'0_'+str(ic)+'.png' ), wfilter_out[f][:,:,ic,oc]) #/filter_image_0/0/1.png
 
 
         print 'output image shape'
