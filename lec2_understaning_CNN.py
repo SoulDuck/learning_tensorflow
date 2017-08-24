@@ -174,10 +174,19 @@ def lec2_3():
         wfilter_out = sess.run([w1,w2,w3,w4] , feed_dict={x_: test_imgs, y_: test_labs})
         layer_out = sess.run([layer1_ , layer2_ , layer3_ , layer4_ , layer5_],feed_dict={x_: test_imgs, y_: test_labs})
 
+
+        print 'filter shape'
+        print 'w1 : ' , np.shape(wfilter_out[0])
+        print 'w2 : ', np.shape(wfilter_out[1])
+        print 'w3 : ', np.shape(wfilter_out[2])
+        print 'w4 : ', np.shape(wfilter_out[3])
+
         #plt.imshow(wfilter_out[0][:,:,0,0])
-        plt.imsave('./filter_image_'+str(epoch)+'/0th_filter.png' , wfilter_out[0][:,:,0,0])
+        for i in range():
+            plt.imsave('./filter_image_'+str(epoch)+'/0th_filter.png' , wfilter_out[0][:,:,0,0])
 
         #plt.imshow(layer_out[0][0,:,:,0])
+        for j in range():
         plt.imsave('./output_image_' + str(epoch) + '/0th_output.png',layer_out[0][0,:,:,0])
 
         print np.shape(wfilter_out[0])
