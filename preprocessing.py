@@ -1,10 +1,14 @@
 import tensorflow as tf
 import PIL
+import sys,os
+import matplotlib
+if "DISPLAY" not in os.environ:
+    # remove Travis CI Error
+    matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 import glob
-import sys,os
 import csv
 from os import listdir
 import re
