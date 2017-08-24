@@ -187,9 +187,10 @@ def lec2_3():
         for f in range(len(wfilter_out)):
             h,w,in_ch,out_ch=np.shape(wfilter_out[f])
             tmp_path=os.path.join(filter_folder_path , str(f))
+            os.mkdir(tmp_path)  # /filter_image_0/0/
             for oc in range(out_ch):
                 tmp_path=os.path.join(tmp_path , str(oc))
-                os.mkdir(tmp_path) #/filter_image_0/0/
+                os.mkdir(tmp_path) #/filter_image_0/0/0
                 for ic in range(in_ch):
                     plt.imsave(tmp_path+'0_'+str(ic)+'.png' , wfilter_out[f][:,:,ic,oc]) #/filter_image_0/0/1.png
 
