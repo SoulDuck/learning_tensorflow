@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="83">
-              <caret line="146" column="23" lean-forward="false" selection-start-line="146" selection-start-column="23" selection-end-line="146" selection-end-column="23" />
+              <caret line="146" column="24" lean-forward="false" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
               <folding>
                 <element signature="e#23#46#0" expanded="true" />
               </folding>
@@ -618,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503589886709</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
+      <created>1503590144896</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1503590144896</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -899,7 +906,7 @@
     <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
-          <caret line="146" column="23" lean-forward="false" selection-start-line="146" selection-start-column="23" selection-end-line="146" selection-end-column="23" />
+          <caret line="146" column="24" lean-forward="false" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
           <folding>
             <element signature="e#23#46#0" expanded="true" />
           </folding>
