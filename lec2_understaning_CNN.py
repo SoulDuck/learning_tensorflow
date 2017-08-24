@@ -144,7 +144,7 @@ def lec2_3():
     saver = tf.train.Saver()
 
     batch_iteration = 1
-    training_epochs = 1
+    training_epochs = 2
 
     train_cost_list = []
     test_cost_list = []
@@ -203,7 +203,7 @@ def lec2_3():
                     os.mkdir(tmp_path)
                 except:
                     pass;
-                plt.imsave(tmp_path+ str(epoch) + '/0_'+str(c)+'.png',layer_out[l][0,:,:,c])
+                plt.imsave(os.path.join(tmp_path , '/0_'+str(c)+'.png') ,layer_out[l][0,:,:,c])
                 # l 번째 레이어에 0 번째 image 의 모든 ch image  을 저장한다
 
 
