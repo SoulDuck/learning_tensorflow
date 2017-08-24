@@ -141,7 +141,7 @@ def lec2_3():
     saver = tf.train.Saver()
 
     batch_iteration = 100
-    training_epochs = 200000
+    training_epochs = 2000000
 
     train_cost_list = []
     test_cost_list = []
