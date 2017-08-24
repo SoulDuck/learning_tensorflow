@@ -175,7 +175,7 @@ def lec2_3():
         plt.imshow(wfilter_out[0][:,:,0,0])
         plt.imsave('./filter_image_'+str(epoch)+'/0th_filter.png')
 
-        plt.imshow(layer_out[0])
+        plt.imshow(layer_out[0][0,:,:,0])
         plt.imsave('./output_image_' + str(epoch) + '/0th_output.png')
 
         print np.shape(wfilter_out[0])
