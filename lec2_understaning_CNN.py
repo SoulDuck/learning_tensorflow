@@ -204,7 +204,7 @@ def lec2_3():
                     os.chmod(tmp_path , 777)
                 except:
                     pass;
-                plt.imsave(os.path.join(tmp_path , '/0_'+str(c)+'.png') ,layer_out[l][0,:,:,c])
+                plt.imsave(os.path.join(tmp_path , '0_'+str(c)+'.png') ,layer_out[l][0,:,:,c])
                 # l 번째 레이어에 0 번째 image 의 모든 ch image  을 저장한다
 
 
