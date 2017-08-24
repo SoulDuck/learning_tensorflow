@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="">
+    <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lec2_understaning_CNN.py" afterPath="$PROJECT_DIR$/lec2_understaning_CNN.py" />
     </list>
@@ -18,8 +18,8 @@
       <file leaf-file-name="lec2_understaning_CNN.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="193" column="83" lean-forward="false" selection-start-line="193" selection-start-column="83" selection-end-line="193" selection-end-column="83" />
+            <state relative-caret-position="248">
+              <caret line="192" column="31" lean-forward="false" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
               <folding>
                 <element signature="e#23#46#0" expanded="true" />
               </folding>
@@ -583,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503588628864</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
+      <created>1503589182985</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1503589182985</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -863,8 +870,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="193" column="83" lean-forward="false" selection-start-line="193" selection-start-column="83" selection-end-line="193" selection-end-column="83" />
+        <state relative-caret-position="248">
+          <caret line="192" column="31" lean-forward="false" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
           <folding>
             <element signature="e#23#46#0" expanded="true" />
           </folding>
