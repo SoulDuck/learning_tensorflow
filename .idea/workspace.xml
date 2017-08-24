@@ -18,8 +18,8 @@
       <file leaf-file-name="lec2_understaning_CNN.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="206" column="39" lean-forward="false" selection-start-line="206" selection-start-column="39" selection-end-line="206" selection-end-column="39" />
+            <state relative-caret-position="-740">
+              <caret line="169" column="34" lean-forward="false" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
               <folding>
                 <element signature="e#23#46#0" expanded="true" />
               </folding>
@@ -562,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503588172240</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
+      <created>1503588239353</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1503588239353</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -842,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="206" column="39" lean-forward="false" selection-start-line="206" selection-start-column="39" selection-end-line="206" selection-end-column="39" />
+        <state relative-caret-position="-740">
+          <caret line="169" column="34" lean-forward="false" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
           <folding>
             <element signature="e#23#46#0" expanded="true" />
           </folding>

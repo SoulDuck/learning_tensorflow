@@ -167,8 +167,8 @@ def lec2_3():
 
 
         try:
-            filter_folder_path='filter_image_'+str(epoch)
-            output_image_folder_path='output_image_' + str(epoch)
+            filter_folder_path='./filter_image_'+str(epoch)
+            output_image_folder_path='./output_image_' + str(epoch)
             os.mkdir(filter_folder_path)
             os.mkdir(output_image_folder_path)
         except Exception:
@@ -204,7 +204,7 @@ def lec2_3():
 
                 except:
                     pass;
-                os.chmod(tmp_path, 777)
+                #os.chmod(tmp_path, 777)
                 plt.imsave(os.path.join(tmp_path , '0_'+str(c)+'.png') ,layer_out[l][0,:,:,c])
                 # l 번째 레이어에 0 번째 image 의 모든 ch image  을 저장한다
 
