@@ -167,8 +167,10 @@ def lec2_3():
 
 
         try:
-            os.mkdir('filter_image_'+str(epoch))
-            os.mkdir('output_image_' + str(epoch))
+            filter_folder_path='filter_image_'+str(epoch)
+            output_image_folder_path='output_image_' + str(epoch)
+            os.mkdir(filter_folder_path)
+            os.mkdir(output_image_folder_path)
         except Exception:
             pass;
         wfilter_out = sess.run([w1,w2,w3,w4] , feed_dict={x_: test_imgs, y_: test_labs})
@@ -193,8 +195,17 @@ def lec2_3():
         print 'layer5 : ', np.shape(layer_out[4])
 
         #plt.imshow(layer_out[0][0,:,:,0])
-        for j in range(len(layer_out)):
-            plt.imsave('./output_image_' + str(epoch) + '/0th_output.png',layer_out[0][0,:,:,0])
+        for l in range(len(layer_out)):
+            b,h,w,ch=np.shape(layer_out[l])
+            for c in range(ch):
+                try:
+                    tmp_path=os.path.join(output_image_folder_path , str(l))
+                    os.mkdir(tmp_path)
+                except:
+                    pass;
+                plt.imsave(tmp_path+ str(epoch) + '/0_'+str(c)+'.png',layer_out[l][0,:,:,c])
+                # l 번째 레이어에 0 번째 image 의 모든 ch image  을 저장한다
+
 
         print np.shape(wfilter_out[0])
         print np.shape(layer_out[0])
