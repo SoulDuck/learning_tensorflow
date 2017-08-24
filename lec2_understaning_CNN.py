@@ -184,8 +184,15 @@ def lec2_3():
         print 'w4 : ', np.shape(wfilter_out[3])
 
         #plt.imshow(wfilter_out[0][:,:,0,0])
-        for i in range(len(wfilter_out)):
-            plt.imsave('./filter_image_'+str(epoch)+'/0th_filter.png' , wfilter_out[0][:,:,0,0])
+        for f in range(len(wfilter_out)):
+            h,w,in_ch,out_ch=np.shape(wfilter_out[f])
+            tmp_path=os.path.join(filter_folder_path , str(f))
+            for oc in len(out_ch):
+                tmp_path=os.path.join(tmp_path , str(oc))
+                os.mkdir(tmp_path) #/filter_image_0/0/
+                for ic in len(in_ch):
+                    plt.imsave(tmp_path+'0_'+str(ic)+'.png' , wfilter_out[f][:,:,ic,oc]) #/filter_image_0/0/1.png
+
 
         print 'output image shape'
         print 'layer1 : ' , np.shape(layer_out[0])
