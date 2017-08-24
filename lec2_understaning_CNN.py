@@ -201,9 +201,10 @@ def lec2_3():
                 try:
                     tmp_path=os.path.join(output_image_folder_path , str(l))
                     os.mkdir(tmp_path)
-                    os.chmod(tmp_path , 777)
+
                 except:
                     pass;
+                os.chmod(tmp_path, 777)
                 plt.imsave(os.path.join(tmp_path , '0_'+str(c)+'.png') ,layer_out[l][0,:,:,c])
                 # l 번째 레이어에 0 번째 image 의 모든 ch image  을 저장한다
 
