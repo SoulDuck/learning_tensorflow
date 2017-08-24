@@ -166,9 +166,11 @@ def lec2_3():
             train_avg_acc += sess.run(accuracy, feed_dict={x_: batch_xs, y_: batch_ys})
 
 
-        os.mkdir('filter_image_'+str(epoch))
-        os.mkdir('output_image_' + str(epoch))
-
+        try:
+            os.mkdir('filter_image_'+str(epoch))
+            os.mkdir('output_image_' + str(epoch))
+        except Exception:
+            pass;
         wfilter_out = sess.run([w1,w2,w3,w4] , feed_dict={x_: test_imgs, y_: test_labs})
         layer_out = sess.run([layer1_ , layer2_ , layer3_ , layer4_ , layer5_],feed_dict={x_: test_imgs, y_: test_labs})
 
