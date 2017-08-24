@@ -185,6 +185,13 @@ def lec2_3():
         for i in range():
             plt.imsave('./filter_image_'+str(epoch)+'/0th_filter.png' , wfilter_out[0][:,:,0,0])
 
+        print 'output image shape'
+        print 'layer1 : ' , np.shape(layer_out[0])
+        print 'layer2 : ', np.shape(layer_out[1])
+        print 'layer3 : ', np.shape(layer_out[2])
+        print 'layer4 : ', np.shape(layer_out[3])
+        print 'layer5 : ', np.shape(layer_out[4])
+
         #plt.imshow(layer_out[0][0,:,:,0])
         for j in range():
         plt.imsave('./output_image_' + str(epoch) + '/0th_output.png',layer_out[0][0,:,:,0])
