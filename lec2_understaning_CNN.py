@@ -63,6 +63,8 @@ def lec2_2():
 
 
 def lec2_3():
+    print 'lec 2-3 start '
+
     train_imgs, train_labs, test_imgs, test_labs = preprocessing.get_cifar_data()
 
     def next_batch(imgs, labs, batch_size):
@@ -88,36 +90,36 @@ def lec2_3():
     b1=tf.Variable(tf.constant(0.1) ,out_ch)
     s1=[1,1,1,1]
     p1='SAME'
-    layer1=tf.nn.conv2d(x_ , w1 , s1 , p1 )+b1
-    layer1=tf.nn.relu(layer1)
+    layer1_=tf.nn.conv2d(x_ , w1 , s1 , p1 )+b1
+    layer1=tf.nn.relu(layer1_)
 
 
     out_ch2=64
     w2=tf.get_variable("w2" , [7,7,out_ch, out_ch2] , initializer=tf.contrib.layers.xavier_initializer())
     b2=tf.Variable(tf.constant(0.1) ,out_ch2)
     s2=[1,1,1,1]
-    layer2=tf.nn.conv2d(layer1, w2 , s2, padding='SAME')+b2
-    layer2=tf.nn.relu(layer2)
+    layer2_=tf.nn.conv2d(layer1, w2 , s2, padding='SAME')+b2
+    layer2=tf.nn.relu(layer2_)
 
 
     pool_s = [1,2,2,1]
-    layer3 = tf.nn.max_pool(layer2, ksize=[1, 2, 2, 1], strides=pool_s, padding='SAME')
+    layer3_ = tf.nn.max_pool(layer2, ksize=[1, 2, 2, 1], strides=pool_s, padding='SAME')
 
     out_ch3=128
     w3=tf.get_variable("w3" , [5,5,out_ch2, out_ch3] , initializer=tf.contrib.layers.xavier_initializer())
     b3=tf.Variable(tf.constant(0.1) ,out_ch3)
     s3=[1,1,1,1]
-    layer4=tf.nn.conv2d(layer3, w3 , s3, padding='SAME')+b3
-    layer4=tf.nn.relu(layer4)
+    layer4_=tf.nn.conv2d(layer3_, w3 , s3, padding='SAME')+b3
+    layer4=tf.nn.relu(layer4_)
 
     out_ch4=128
     w4=tf.get_variable("w4" , [5,5,out_ch3, out_ch4] , initializer=tf.contrib.layers.xavier_initializer())
     b4=tf.Variable(tf.constant(0.1) ,out_ch4)
     s4=[1,1,1,1]
-    layer4=tf.nn.conv2d(layer4, w4 , s4, padding='SAME')+b4
-    layer4=tf.nn.relu(layer4)
+    layer5_=tf.nn.conv2d(layer4, w4 , s4, padding='SAME')+b4
+    layer5=tf.nn.relu(layer5_)
 
-    layer5 = tf.nn.max_pool(layer4, ksize=[1, 2, 2, 1], strides=pool_s, padding='SAME')
+    layer5 = tf.nn.max_pool(layer5, ksize=[1, 2, 2, 1], strides=pool_s, padding='SAME')
 
     #fully connected layer = affine layer
 
@@ -140,8 +142,8 @@ def lec2_3():
     sess.run(init)
     saver = tf.train.Saver()
 
-    batch_iteration = 100
-    training_epochs = 2000000
+    batch_iteration = 1
+    training_epochs = 1
 
     train_cost_list = []
     test_cost_list = []
@@ -162,6 +164,11 @@ def lec2_3():
             train_avg_cost += sess.run(cost, feed_dict={x_: batch_xs, y_: batch_ys})
             train_avg_acc += sess.run(accuracy, feed_dict={x_: batch_xs, y_: batch_ys})
 
+        wfilter_out = sess.run([w1,w2,w3,w4] , feed_dict={x_: test_imgs, y_: test_labs})
+        layer_out = sess.run([layer1_ , layer2_ , layer3_ , layer4_ , layer5_],feed_dict={x_: test_imgs, y_: test_labs})
+
+        print np.shape(wfilter_out[0])
+        print np.shape(layer_out[0])
         train_avg_cost = train_avg_cost / batch_iteration
         train_avg_acc = train_avg_acc / batch_iteration
 
