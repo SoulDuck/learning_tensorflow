@@ -37,6 +37,12 @@
 
 ![Alt_text](readme_pic/conv1.png)
 
+![Alt_text](readme_pic/conv1_1.png)
+
+![Alt_text](readme_pic/padding_stride.png)
+
+![Alt_text](readme_pic/padding_stride_2.png)
+
 ![Alt_text](readme_pic/conv2.png)
 
 ![Alt_text](readme_pic/draw_graph.png)
