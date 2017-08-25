@@ -35,6 +35,14 @@
 
 ![Alt_text](readme_pic/conv0.png)
 
+![Alt_text](readme_pic/conv0_1.png)
+
+![Alt_text](readme_pic/conv0_2.png)
+
+![Alt_text](readme_pic/conv0_3.png)
+
+![Alt_text](readme_pic/conv0_4.png)
+
 ![Alt_text](readme_pic/conv1.png)
 
 ![Alt_text](readme_pic/conv1_1.png)
