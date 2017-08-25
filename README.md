@@ -39,7 +39,7 @@
 
 ![Alt_text](readme_pic/conv0_2.png)
 
-![Alt_text](readme_pic/conv0_3.png)
+![Alt_text](readme_pic/conv0__3.png)
 
 ![Alt_text](readme_pic/conv0_4.png)
 
