@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/readme_pic/con0_2.png" afterPath="$PROJECT_DIR$/readme_pic/conv0_2.png" />
+    <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme_pic/conv0_3.png" afterPath="$PROJECT_DIR$/readme_pic/conv0_3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="lec2_understaning_CNN.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="68" column="44" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+            <state relative-caret-position="309">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="e#23#46#0" expanded="true" />
               </folding>
@@ -674,13 +674,21 @@
       <option name="project" value="LOCAL" />
       <updated>1503625414842</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb">
+      <created>1503625527188</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1503625527188</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20028612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20028612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2176617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -941,8 +949,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="68" column="44" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+        <state relative-caret-position="309">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="e#23#46#0" expanded="true" />
           </folding>
