@@ -67,7 +67,10 @@ def lec2_3():
     print 'lec 2-3 start '
 
     train_imgs, train_labs, test_imgs, test_labs = preprocessing.get_cifar_data()
-
+    #plt.imshow(test_imgs[0])
+    plt.imsave('./pic.png',test_imgs[0])
+    #plt.show()
+    """
     def next_batch(imgs, labs, batch_size):
         indices = random.sample(range(len(imgs)), batch_size)
         batch_xs = imgs[indices]
@@ -255,5 +258,6 @@ def lec2_3():
     # stride : 좌우로 몇 칸 씩 커널을 이동 할 것인지에 대한 값
     # padding : convolution 전후로 activation map 의 크기를 조정하기 위한 값 , SAME 을 입력하면 항상 convolution 전후의 크기가 같다.
     # weight : [커널의 가로크기, 커널의 세로크기, input activation map 의 채널 크기, output activiation map 의 채널 크기]
+        """
 if __name__=='__main__':
     lec2_3()
