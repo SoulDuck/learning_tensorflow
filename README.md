@@ -6,6 +6,15 @@
 - cifar-deep-convolution-block-overfitting.ipynb : 4 convolution layers + 2 max pooling + dropout + data augmentation
 - preprocessing.py : cifar data loading and preprocessing
 
+# convolution best architecture paper
+
+[Lenet5](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) | [Alexnet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)| [ZFNet](https://arxiv.org/abs/1311.2901) | [Overfit net](https://arxiv.org/abs/1312.6229) | [VGG](https://arxiv.org/pdf/1409.1556.pdf) | [Resnet](https://arxiv.org/abs/1512.03385)|  [Enet](https://arxiv.org/abs/1606.02147) | [Xeception](https://arxiv.org/abs/1610.02357) | [fractral](https://arxiv.org/abs/1605.07648) | [DenseNet](https://arxiv.org/abs/1608.06993) | [SqueezeNet]()
+
+
+
+
+
+
 # Mediwhale
 ![Alt text](readme_pic/title.png)
 
