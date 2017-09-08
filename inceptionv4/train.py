@@ -27,7 +27,7 @@ def input_pipeline(type='mnist'):
     train_labs=mnist.train.labels
     val_imgs = mnist.test.images.reshape([-1, 28, 28, 1])
     val_labs = mnist.test.labels
-    train_imgs, train_labs, test_imgs, test_labs = preprocessing.get_cifar(type_='image')
+    train_imgs, train_labs, val_imgs, val_labs = preprocessing.get_cifar(type_='image')
     return (train_imgs , train_labs , val_imgs , val_labs)
 def train(max_iter ,learning_rate , check_point, optimizer='AdamOptimizer',restored_model_folder_path=None , restored_path_folder_path=None):
     ##########################setting############################
