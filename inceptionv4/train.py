@@ -4,7 +4,7 @@ from cnn import convolution2d, max_pool, algorithm, affine, batch_norm_layer, ga
 import inception_v4
 import data
 import numpy as np
-
+import utils
 from inception_v4 import stem, stem_1, stem_2, reductionA, reductionB, blockA, blockB, blockC
 import cam
 import aug

@@ -28,11 +28,9 @@
       <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inceptionv4/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding>
-                <element signature="e#24#47#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -777,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504840701562</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="fix input_pipeline">
+      <created>1504840829094</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1504840829094</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -811,7 +816,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/soulduck/learning_tensorflow&#10;&#10;# Conflicts:&#10;#&#9;fully_connected_model.ipynb" />
     <MESSAGE value="&#10;add readme pic" />
     <MESSAGE value="add inceptionv4" />
-    <option name="LAST_COMMIT_MESSAGE" value="add inceptionv4" />
+    <MESSAGE value="fix input_pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix input_pipeline" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1090,11 +1096,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inceptionv4/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="e#24#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
