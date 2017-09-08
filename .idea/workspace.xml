@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="add inceptionv4">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inceptionv4/aug.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inceptionv4/cam.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inceptionv4/data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inceptionv4/run_this_file.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inceptionv4/tmp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inceptionv4/train.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/inceptionv4/inceptionv4.py" afterPath="$PROJECT_DIR$/inceptionv4/inception_v4.py" />
+    <list default="true" id="706f3d22-5bdd-45f4-a137-aa9041c2c50c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inceptionv4/cnn.py" afterPath="$PROJECT_DIR$/inceptionv4/cnn.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,18 +14,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lec2_understaning_CNN.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lec2_understaning_CNN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-              <folding>
-                <element signature="e#23#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,14 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inceptionv4/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="431">
+              <caret line="127" column="24" lean-forward="true" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
               <folding>
                 <element signature="e#24#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inceptionv4/log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aug.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="aug.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inceptionv4/aug.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2985">
-              <caret line="199" column="3" lean-forward="false" selection-start-line="199" selection-start-column="3" selection-end-line="199" selection-end-column="3" />
+            <state relative-caret-position="325">
+              <caret line="184" column="51" lean-forward="true" selection-start-line="184" selection-start-column="51" selection-end-line="184" selection-end-column="51" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -757,7 +747,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504835087652</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="add inceptionv4">
+      <created>1504839982142</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1504839982142</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -798,13 +795,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1038,16 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inceptionv4/aug.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2985">
-          <caret line="199" column="3" lean-forward="false" selection-start-line="199" selection-start-column="3" selection-end-line="199" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inceptionv4/cam.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1068,10 +1048,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inceptionv4/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="431">
+          <caret line="127" column="24" lean-forward="true" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
           <folding>
             <element signature="e#24#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inceptionv4/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inceptionv4/aug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="184" column="51" lean-forward="true" selection-start-line="184" selection-start-column="51" selection-end-line="184" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
