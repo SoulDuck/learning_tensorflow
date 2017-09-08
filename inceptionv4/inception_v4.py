@@ -228,3 +228,17 @@ def structure_B( x_ , phase_train):
     layer = blockC('blockC_0', layer)
     layer = tf.identity(layer, name='top_conv')
     return layer
+
+def structure_C(x_):
+    print 'stem A -> B -> C -> blockA -> reductionA -> blockB -> reduction B -> blockC'
+
+    layer = stem('stem', x_)
+    layer = stem_1('stem_1', layer)
+    layer = stem_2('stem_2', layer)
+    layer = blockA('blockA_0', layer)
+    #layer = reductionA('reductionA', layer)
+    layer = blockB('blockB_0', layer)
+    #layer = reductionB('reductionB', layer)
+    layer = blockC('blockC_0', layer)
+    top_conv = tf.identity(layer, name='top_conv')
+    return top_conv

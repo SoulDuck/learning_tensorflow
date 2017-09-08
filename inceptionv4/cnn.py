@@ -88,7 +88,7 @@ def gap(name,x , n_classes ):
 
 def algorithm(y_conv , y_ , learning_rate , optimizer='GradientDescentOptimizer'):
     """
-
+AdamOptimizer
     :param y_conv: logits
     :param y_: labels
     :param learning_rate: learning rate
@@ -106,6 +106,10 @@ def algorithm(y_conv , y_ , learning_rate , optimizer='GradientDescentOptimizer'
     pred=tf.nn.softmax(y_conv , name='softmax')
     pred_cls=tf.argmax(pred , axis=1 , name='pred_cls')
     cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=y_conv , labels=y_) , name='cost')
+    print y_conv
+    print y_
+    print learning_rate
+    print optimizer_dic[optimizer](learning_rate)
     train_op = optimizer_dic[optimizer](learning_rate).minimize(cost)
     correct_pred=tf.equal(tf.argmax(y_conv , 1) , tf.argmax(y_ , 1) , name='correct_pred')
     accuracy =  tf.reduce_mean(tf.cast(correct_pred , dtype=tf.float32) , name='accuracy')
