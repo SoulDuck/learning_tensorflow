@@ -125,7 +125,7 @@ if __name__ == '__main__':
     restored_path_folder_path='./paths/fundus/0'
 
     args.max_iter=1000000
-    args.learning_rate=0.01
+    args.learning_rate=0.1
     args.check_point=100
   
     input_pipeline()
