@@ -94,7 +94,7 @@ def train(max_iter ,learning_rate , check_point, optimizer='AdamOptimizer',resto
 
             # names = ['cataract', 'glaucoma', 'retina', 'retina_glaucoma','retina_cataract', 'cataract_glaucoma', 'normal']
             batch_xs, batch_ys = data.next_batch(train_imgs, train_labs , batch_size=120)
-            batch_xs = aug.aug_level_1(batch_xs)
+            #batch_xs = aug.aug_level_1(batch_xs)
             #utils.np2images(batch_xs , './debug')
             train_acc, train_loss, _ = sess.run([accuracy, cost, train_op],
                                                 feed_dict={x_: batch_xs, y_: batch_ys, phase_train: True})
