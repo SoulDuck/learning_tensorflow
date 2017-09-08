@@ -136,7 +136,7 @@ def cls2onehot(cls, depth):
         print labels[-10:]
     return labels
 
-def get_cifar(train_folder='./train' , test_folder='./test' , type_='str'):
+def get_cifar(train_folder='../train' , test_folder='../test' , type_='str'):
     """
     airplane :0
     automobile :1
