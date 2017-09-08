@@ -72,7 +72,7 @@ def train(max_iter ,learning_rate , check_point, optimizer='AdamOptimizer',resto
 
     start_time=time.time()
     try:
-        f=open('log.txt' ,'a')
+        f=open('log.txt' ,'w')
         for step in range(max_iter):
             show_progress(step, max_iter)
 
