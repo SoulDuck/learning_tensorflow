@@ -24,13 +24,14 @@ def input_pipeline(type='mnist'):
     mnist = input_data.read_data_sets("./MNIST_data", one_hot=True)
     train_imgs=mnist.train.images.reshape([-1 , 28,28,1])
     train_labs=mnist.train.labels
-    val_imgs = mnist.train.images.reshape([-1, 28, 28, 1])
+    val_imgs = mnist.test.images.reshape([-1, 28, 28, 1])
     val_labs = mnist.test.labels
-
     return (train_imgs , train_labs , val_imgs , val_labs)
 def train(max_iter ,learning_rate , check_point, optimizer='AdamOptimizer',restored_model_folder_path=None , restored_path_folder_path=None):
     ##########################setting############################
     train_imgs , train_labs, val_imgs , val_labs=input_pipeline()
+
+
 
     n,image_height,image_width,image_color_ch=np.shape(train_imgs)
     n_classes=len(train_labs[0])
