@@ -124,8 +124,8 @@ if __name__ == '__main__':
     restored_model_folder_path='./cnn_model/fundus/16/'
     restored_path_folder_path='./paths/fundus/0'
 
-    args.max_iter=1000
-    args.learning_rate=0.001
+    args.max_iter=1000000
+    args.learning_rate=0.01
     args.check_point=100
   
     input_pipeline()
