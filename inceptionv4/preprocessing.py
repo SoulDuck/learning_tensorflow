@@ -171,8 +171,8 @@ def get_cifar(train_folder='../train' , test_folder='../test' , type_='str'):
 
     print 'shape of train data : ', np.shape(train_imgs)
     print 'shape of test data : ', np.shape(test_imgs)
-    train_cls = mapping('./train/trainLabels.csv', mapping_info)
-    test_cls = mapping('./test/testLabels.csv', mapping_info)
+    train_cls = mapping('../train/trainLabels.csv', mapping_info)
+    test_cls = mapping('../test/testLabels.csv', mapping_info)
     train_labs = cls2onehot(train_cls, depth=10)
     test_labs = cls2onehot(test_cls, depth=10)
 
