@@ -5,8 +5,8 @@ import tensorflow as tf
 import six
 import model
 FLAGS=tf.app.flags.FLAGS
-dataset='cifar10'
 dataset='fundus_300x300'
+dataset='cifar10'
 
 if dataset == 'cifar10':
     image_size=32
@@ -62,15 +62,15 @@ def train(hps):
 
     class _LearningRateSetterHook(tf.train.SessionRunHook):
         def begin(self):
-            self._lrn_rate = 0.001
+            self._lrn_rate = 0.1
         def before_run(self, run_context):
             return tf.train.SessionRunArgs(cls_resnet.global_step , feed_dict={cls_resnet.lrn_rate : self._lrn_rate})
         def after_run(self , run_context , run_values):
             train_step = run_values.results
             if train_step < 40000:
-                self._lrn_rate=0.001
+                self._lrn_rate=0.01
             elif train_step < 60000:
-                self._lrn_rate = 0.0001
+                self._lrn_rate = 0.001
             elif train_step < 80000:
                 self._lrn_rate = 0.0001
             else:
